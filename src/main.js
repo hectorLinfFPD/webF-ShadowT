@@ -1,5 +1,6 @@
 import './style.css'
-import logoSvg from './assets/sahdowT.svg'
+import logoSvg from './assets/shadowT3.svg'
+
 
 document.querySelector('#app').innerHTML = `
     <nav class="navbar">
@@ -7,29 +8,37 @@ document.querySelector('#app').innerHTML = `
         <a href="#home" data-link="home"><img src="${logoSvg}" alt="Logo" class="logo-img" /></a>
       </div>
 
-      <ul class="navbar-items">
-        <li class="navbar-item">
-          <a href="#home" data-link="home">Inicio</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#blog" data-link="blog">Blog</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#quienes-somos" data-link="quienes-somos">Quiénes Somos</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#videoej" data-link="videoej">Nuestro trabajo</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#contacto" data-link="contacto">Contacto</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#funcionalidad" data-link="funcionalidad">Funcionalidad</a>
-        </li>
-      </ul>
+      <div class="navbar-menu">
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#home" data-link="home">Inicio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#blog" data-link="blog">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#quienes-somos" data-link="nuestroT">Nuestro Trabajo</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#videoej" data-link="videoej">Quienes Somos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contacto" data-link="contacto">Contacto</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#funcionalidad" data-link="funcionalidad">Funcionalidad</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-spacer"></div>
     </nav>
 
     <main id="page-content"></main>
+
+    <footer class="legal-footer">
+      <p>© 2026 Shadow Technologies. Todos los derechos reservados. Política de privacidad</p>
+    </footer>
 
     <div class="transition-svg" aria-hidden="true">
       <svg
