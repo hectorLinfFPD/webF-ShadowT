@@ -1,6 +1,6 @@
+ // Punto de entrada principal: define la estructura base del sitio, mantiene estaticos e importables el logo y el menu de navegacion
 import './style.css'
 import logoSvg from './assets/shadowT3.svg'
-
 
 document.querySelector('#app').innerHTML = `
     <nav class="navbar">
@@ -17,10 +17,10 @@ document.querySelector('#app').innerHTML = `
             <a href="#blog" data-link="blog">Blog</a>
           </li>
           <li class="navbar-item">
-            <a href="#quienes-somos" data-link="nuestroT">Nuestro Trabajo</a>
+            <a href="#quienesS" data-link="quienesS">Quiénes Somos</a>
           </li>
           <li class="navbar-item">
-            <a href="#videoej" data-link="videoej">Quienes Somos</a>
+            <a href="#nuestroT" data-link="nuestroT">Nuestro trabajo</a>
           </li>
           <li class="navbar-item">
             <a href="#contacto" data-link="contacto">Contacto</a>
@@ -63,4 +63,5 @@ document.querySelector('#app').innerHTML = `
     </div>
 `
 
+// Inicia la lógica de navegación
 import('./script.js').then(({ init }) => init())

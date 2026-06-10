@@ -1,3 +1,5 @@
+//seccion de contacto con formulario para envios de solicitud
+
 import { initEyes } from '../script.js'
 
 export function init() {

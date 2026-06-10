@@ -1,3 +1,4 @@
+// Página de Inicio: Hero principal
 import opc1Img from '../assets/opc1.png'
 
 export const template = `
@@ -10,15 +11,16 @@ export const template = `
         <h1 class="text">IMPULSA NEGOCIOS<span>CRECE SEGURO</span></h1>
         <h1 class="text">SOMOS SHADOW<span>HABLAMOS HOY?</span></h1>
       </div>
-      <div class="home-icons">
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-github"></ion-icon>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="mail-outline"></ion-icon>
-      </div>
     </div>
     <div class="home-image">
       <img src="${opc1Img}" alt="opc1" class="opc1-img" />
     </div>
   </section>
+
+  <div class="home-icons">
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-github"></ion-icon>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="mail-outline"></ion-icon>
+  </div>
 `

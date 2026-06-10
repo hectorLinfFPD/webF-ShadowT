@@ -1,3 +1,4 @@
+//seccio de blog donde se recopila y se publica información sobre proyectos y soluciones asi como opiniones y artículos de la gente y negocios en general
 import imgLoQ from '../assets/loQ.jpeg'
 import imgiocQ from '../assets/iocQ.jpeg'
 import imgoctQ from '../assets/octQ.jpeg'

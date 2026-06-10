@@ -1,6 +1,8 @@
+// Página de "Nuestro Trabajo" con scroll horizontal
 import imgpapuaF from '../assets/papuaF.png'
 import imgytinM from '../assets/ytinM.png'
 import imgrenM from '../assets/renM.png'
+
 import { initScroll } from '../script.js'
 
 export function init() {
@@ -17,7 +19,7 @@ export const template = `
 
 		<div class="scroller">
 			<section class="intro">
-				<h1>Ideas que se tranforman, Una linea a la vez</h1>
+				<h1>Ideas que se tranforman, Una linea a las vez</h1>
 				<h2>
 					Del análisis conceptual al software funcional. Explora los sistemas y las soluciones que hemos estructurado para entornos reales.
 				</h2>
@@ -51,12 +53,10 @@ export const template = `
 				<h1>Rendimiento en Movimiento</h1>
 			</section>
 
-			<!-- 5 -->
 			<section class="banner-img">
 				<img src="${imgytinM}" alt="Miniatura de yt papuaFit"/>
 			</section>
 
-			<!-- 6 -->
 			<section class="story">
 				<h1>Entrena el Proceso</h1>
 				<h1>Controla Cada Dato</h1>

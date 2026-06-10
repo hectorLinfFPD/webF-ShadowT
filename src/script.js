@@ -1,3 +1,4 @@
+// Función para los ojos que siguen el mouse
 export function initEyes() {
   const pupils = document.querySelectorAll('.pupil')
   const onMove = (e) => {
@@ -17,12 +18,13 @@ export function initEyes() {
   document.addEventListener('mousemove', onMove)
 }
 
+// Lógica de navegación y transiciones con GSAP
 export function init() {
   const routes = {
     home: () => import('./pages/home.js'),
     blog: () => import('./pages/blog.js'),
-    'nuestroT': () => import('./pages/nuestroT.js'),
-    videoej: () => import('./pages/videoej.js'),
+    'quienesS': () => import('./pages/quienesS.js'),
+    nuestroT: () => import('./pages/nuestroT.js'),
     contacto: () => import('./pages/contacto.js'),
     funcionalidad: () => import('./pages/funcionalidad.js'),
   }
@@ -125,8 +127,7 @@ export function init() {
   renderPage(currentRoute)
 }
 
-/* funcion para el scroll de quienes somos*/
-
+// Lógica del scroll horizontal para la sección "Nuestro Trabajo"
 export function initScroll() {
 	const container = document.querySelector(".qs");
 	const scroller = document.querySelector(".scroller");
@@ -168,7 +169,6 @@ export function initScroll() {
 			sequenceWidth += parseFloat(window.getComputedStyle(section).width);
 		});
 
-		// Create clones before original sections
 		for (let i = -bufferSize; i < 0; i++) {
 			templateSections.forEach((section, index) => {
 				const clone = section.cloneNode(true);
@@ -178,7 +178,6 @@ export function initScroll() {
 			});
 		}
 
-		// Add original sections if none exist
 		if (originalSections.length === 0) {
 			templateSections.forEach((section, index) => {
 				const clone = section.cloneNode(true);
@@ -187,7 +186,6 @@ export function initScroll() {
 			});
 		}
 
-		// Create clones after original sections
 		for (let i = 1; i <= bufferSize; i++) {
 			templateSections.forEach((section, index) => {
 				const clone = section.cloneNode(true);
@@ -270,12 +268,10 @@ export function initScroll() {
 		}
 	};
 
-	// Initialize
 	const sequenceWidth = setupScroll();
 	updateProgress(sequenceWidth, true);
 	progressBar.style.transform = `scaleX(${currentProgressScale})`;
 
-	// Wheel event
 	container.addEventListener(
 		"wheel",
 		(e) => {
@@ -292,7 +288,6 @@ export function initScroll() {
 		{ passive: false }
 	);
 
-	// Touch events
 	container.addEventListener("touchstart", (e) => {
 		isDown = true;
 		lastTouchX = e.touches[0].clientX;
